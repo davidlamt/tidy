@@ -1,9 +1,11 @@
-const elementSelectorsToHide = ['#masthead-ad', '#related', '#comments'];
-
-for (const elementSelector of elementSelectorsToHide) {
-  const elements = document.querySelectorAll(elementSelector);
-  for (const element of elements) {
-    console.log('removing element', element);
-    element.remove();
+browser.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
+  if (changeInfo.status === 'complete') {
+    if (tab.url.includes('youtube.com')) {
+      console.log('Landed on YouTube, executing removal script...');
+      browser.tabs.executeScript(tabId, {
+        file: '/removeYouTubeDistractions.js'
+      });
+    }
   }
-}
+});
+

@@ -2,11 +2,12 @@
   "manifest_version": 2,
   "name": "Tidy",
   "version": "0.1.0",
-  "description": "Helps you reclaim time by removing distractions from common platforms.",
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": ["index.js"]
-    }
+  "description": "Helps you reclaim time by removing distractions from common social platforms.",
+  "background": {
+      "scripts": ["index.js"]
+  },
+  "permissions": [
+    "tabs",
+    "https://www.youtube.com/*"
   ]
 }
