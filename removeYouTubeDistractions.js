@@ -8,7 +8,7 @@ function removeYouTubeDistractions() {
 
   // Watching video page
   if (window.location.pathname === '/watch') {
-    elementSelectorsToRemove.push(...['#related', '#comments'])
+    elementSelectorsToRemove.push(...['#related', '#comments', '#comment-teaser', '#ticket-shelf', '#merch-shelf'])
   }
 
   console.log('YouTube distraction selectors:', elementSelectorsToRemove);
