@@ -11,12 +11,12 @@ function removeYouTubeDistractions() {
     elementSelectorsToRemove.push(...['#related', '#comments'])
   }
 
-  console.log('Removing YouTube element selectors: ', elementSelectorsToRemove);
+  console.log('YouTube distraction selectors:', elementSelectorsToRemove);
 
   for (const elementSelector of elementSelectorsToRemove) {
     const elements = document.querySelectorAll(elementSelector);
     for (const element of elements) {
-      console.log('removing element', element);
+      console.log('Removing element', element);
       element.remove();
     }
   }
