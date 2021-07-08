@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Tidy",
   "version": "0.1.0",
-  "description": "Helps you reclaim time by removing distractions from common social platforms.",
+  "description": "Helps you reclaim time by removing distractions from common platforms.",
   "background": {
       "scripts": ["index.js"]
   },
