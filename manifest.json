@@ -8,6 +8,7 @@
   },
   "permissions": [
     "tabs",
+    "https://www.imdb.com/*",
     "https://www.reddit.com/*",
     "https://www.youtube.com/*"
   ]
