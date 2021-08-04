@@ -4,6 +4,7 @@
   "description": "Helps you reclaim time by removing distractions from common platforms.",
   "main": "background.js",
   "scripts": {
+    "build": "tsc --outDir dist/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/davidlamt/tidy/issues"
   },
-  "homepage": "https://github.com/davidlamt/tidy#readme"
+  "homepage": "https://github.com/davidlamt/tidy#readme",
+  "devDependencies": {
+    "@types/firefox-webext-browser": "^82.0.1",
+    "typescript": "^4.3.5"
+  }
 }
